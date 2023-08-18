@@ -1,0 +1,8 @@
+@tailwind base;
+@layer base {
+    body{
+        @apply bg-red-100
+    }
+}
+@tailwind components;
+@tailwind utilities;
