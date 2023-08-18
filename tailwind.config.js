@@ -8,9 +8,20 @@ export default {
     },
     extend: {
       colors: {
-        newcolor: {
-          DEFAULT: "red",
-          "500":"blue",
+        "primary": {
+          DEFAULT:"#8C7C68",
+        },
+        "secondary": {
+          DEFAULT:"#BFAC95"
+        },
+        "important": {
+          DEFAULT:"#73451D"
+        },
+        "danger": {
+          DEFAULT:"#3D4033"
+        },
+        "white": {
+          DEFAULT:"#F2F2F2"
         }
       }
     },

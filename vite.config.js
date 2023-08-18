@@ -25,27 +25,30 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
-  base: '/Vite-learn/',
+  base: "/deal-website/",
   plugins: [
-    liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
+    liveReload(["./layout/**/*.ejs", "./pages/**/*.ejs", "./pages/**/*.html"]),
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
   server: {
     // 啟動 server 時預設開啟的頁面
-    open: 'pages/index.html',
+    open: "pages/index.html",
   },
   build: {
     rollupOptions: {
       input: Object.fromEntries(
         glob
-          .sync('pages/**/*.html')
+          .sync("pages/**/*.html")
           .map((file) => [
-            path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
+            path.relative(
+              "pages",
+              file.slice(0, file.length - path.extname(file).length),
+            ),
             fileURLToPath(new URL(file, import.meta.url)),
-          ])
+          ]),
       ),
     },
-    outDir: 'dist',
+    outDir: "dist",
   },
 });

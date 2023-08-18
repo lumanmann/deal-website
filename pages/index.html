@@ -8,12 +8,21 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
-    <h1 class="index-title text-newcolor-500">首頁</h1>
+    <ul class="mx-auto w-1/2 border-4 border-red-500">
+      <li class="text-primary">text-primary</li>
+      <li class="text-secondary">text-secondary</li>
+      <li class="text-danger">text-danger</li>
+      <li class="text-important">text-important</li>
+      <li class="bg-black text-white">text-white</li>
+    </ul>
+    <ul class="mt-4 border-4">
+      <li class="bg-primary p-1">bg-primary</li>
+      <li class="bg-secondary p-1">bg-secondary</li>
+      <li class="bg-danger p-1 text-white">bg-danger</li>
+      <li class="bg-important p-1">bg-important</li>
+      <li class="bg-white p-1">bg-white</li>
+    </ul>
     <%- include('./layout/footer'); -%>
-    <h2 class="text-3xl text-blue-300 sm:text-emerald-100 md:text-red-500">
-      Hello world!
-    </h2>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
