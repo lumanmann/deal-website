@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
 @tailwind base;
 @layer base {
     body{
-        @apply bg-white
+        @apply bg-white;
+        min-height:100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
     }
 }
 @tailwind components;

@@ -2,28 +2,46 @@
 export default {
   content: ["./pages/**/*.{html,}", "./layout/**/*.{ejs,}"],
   theme: {
-    container:{ 
+    screens: {
+      sm: "576px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 576px) { ... }
+
+      lg: "992px",
+      // => @media (min-width: 992px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
+    },
+    container: {
       center: true,
-      padding:"12px"
+      padding: {
+        DEFAULT: "12px",
+      },
     },
     extend: {
       colors: {
-        "primary": {
-          DEFAULT:"#8C7C68",
+        primary: {
+          DEFAULT: "#8C7C68",
         },
-        "secondary": {
-          DEFAULT:"#BFAC95"
+        secondary: {
+          DEFAULT: "#BFAC95",
         },
-        "important": {
-          DEFAULT:"#73451D"
+        important: {
+          DEFAULT: "#73451D",
         },
-        "danger": {
-          DEFAULT:"#3D4033"
+        danger: {
+          DEFAULT: "#3D4033",
         },
-        "white": {
-          DEFAULT:"#F2F2F2"
-        }
-      }
+        white: {
+          DEFAULT: "#F2F2F2",
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
