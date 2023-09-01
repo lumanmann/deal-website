@@ -21,6 +21,7 @@
     "vite-plugin-ejs": "^1.6.4"
   },
   "dependencies": {
+    "firebase": "^10.3.0",
     "gh-pages": "^5.0.0",
     "glob": "^10.2.2",
     "vite-plugin-live-reload": "^3.0.2"

@@ -8,22 +8,84 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <ul class="mx-auto w-1/2 border-4 border-red-500">
-      <li class="text-primary">text-primary</li>
-      <li class="text-secondary">text-secondary</li>
-      <li class="text-danger">text-danger</li>
-      <li class="text-important">text-important</li>
-      <li class="bg-black text-white">text-white</li>
-    </ul>
-    <h1>我是註冊登入頁</h1>
-    <ul class="mt-4 border-4">
-      <li class="bg-primary p-1">bg-primary</li>
-      <li class="bg-secondary p-1">bg-secondary</li>
-      <li class="bg-danger p-1 text-white">bg-danger</li>
-      <li class="bg-important p-1">bg-important</li>
-      <li class="bg-white p-1">bg-white</li>
-    </ul>
+    <div>
+      <div class="container flex max-h-full items-center py-12 md:py-24">
+        <section class="flex h-[500px] w-full justify-center">
+          <div class="login-wrap flex w-full items-center justify-center rounded-l-md bg-danger bg-opacity-20 p-4 shadow-xl md:basis-4/12 md:p-8">
+            <form class="login-form flex w-full flex-col items-center md:w-3/4" action="#" id="login">
+              <h2 class="pb-8 text-4xl font-bold text-danger">登入</h2>
+              <input class="mb-3 w-full" type="email" placeholder="Email" />
+              <input class="w-full" type="password" placeholder="密碼" />
+              <a class="my-8 text-sm font-extralight hover:scale-110" href="#">忘記密碼?</a>
+              <button class="login-account-btn rounded-lg bg-primary px-8 py-2 text-4xl font-bold text-white hover:bg-important lg:text-2xl">登入</button>
+              <button class="register-mobile-btn mt-4 rounded-lg bg-primary px-8 py-2 text-4xl font-bold text-white hover:bg-important md:hidden lg:text-2xl">
+                注冊
+              </button>
+            </form>
+            <button class="login-btn hidden rounded-lg bg-primary px-8 py-2 text-xl text-white hover:bg-important lg:text-2xl">登入</button>
+          </div>
+          <div
+            class="register-wrap hidden w-full items-center justify-center rounded-r-md bg-danger md:bg-transparent bg-opacity-20 p-4 shadow-xl md:flex md:basis-4/12 md:p-8"
+          >
+            <form class="register-form flex w-full flex-col items-center md:hidden md:w-3/4" action="#" id="register">
+              <h2 class="p-8 text-4xl font-bold text-danger">注冊</h2>
+              <input class="mb-3 w-full" type="text" placeholder="使用者名稱"/>
+              <input class="mb-3 w-full" type="email" placeholder="Email"/>
+              <input class="mb-4 w-full" type="password" placeholder="密碼"/>
+              <a class="mb-4 text-sm font-extralight hover:scale-110 hover:font-bold hover:text-important" href="#">google登入</a>
+              <a class="mb-4 text-sm font-extralight hover:scale-110 hover:font-bold hover:text-important" href="#">facebook登入</a>
+              <button class="register-account-btn rounded-lg bg-primary px-8 py-2 text-4xl font-bold text-white hover:bg-important lg:text-2xl">注冊</button>
+              <button class="login-mobile-btn mt-4 rounded-lg bg-primary px-8 py-2 text-4xl font-bold text-white hover:bg-important md:hidden lg:text-2xl">
+                登入
+              </button>
+            </form>
+            <button class="register-btn hidden rounded-lg bg-primary px-8 py-2 text-xl text-white hover:bg-important md:block lg:text-2xl">注冊</button>
+          </div>
+        </section>
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script>
+      const registerForm = document.querySelector('.register-form');
+      const loginForm = document.querySelector('.login-form');
+      const registerBtn = document.querySelector('.register-btn');
+      const loginBtn = document.querySelector('.login-btn');
+      const loginWrap = document.querySelector('.login-wrap');
+      const registerWrap = document.querySelector('.register-wrap');
+      registerBtn.addEventListener('click', () => {
+        registerBtn.classList.remove('md:block');
+        registerForm.classList.remove('md:hidden');
+        registerForm.classList.add('flex');
+        loginBtn.classList.remove('hidden');
+        loginForm.classList.add('hidden');
+        loginWrap.classList.remove('bg-danger');
+        loginWrap.classList.add('bg-transparent');
+        registerWrap.classList.remove('md:bg-transparent');
+      });
+      loginBtn.addEventListener('click', () => {
+        loginBtn.classList.add('hidden');
+        loginForm.classList.remove('hidden');
+        registerBtn.classList.add('md:block');
+        registerForm.classList.add('md:hidden');
+        loginWrap.classList.add('bg-danger');
+        loginWrap.classList.remove('bg-transparent');
+        registerWrap.classList.add('md:bg-transparent');
+      });
+      const registerMobileBtn = document.querySelector('.register-mobile-btn');
+      const loginMobileBtn = document.querySelector('.login-mobile-btn');
+      registerMobileBtn.addEventListener('click', () => {
+        registerWrap.classList.remove('hidden');
+        registerWrap.classList.add('flex');
+        loginWrap.classList.add('hidden');
+        loginWrap.classList.remove('flex');
+      });
+      loginMobileBtn.addEventListener('click', () => {
+        loginWrap.classList.remove('hidden');
+        loginWrap.classList.add('flex');
+        registerWrap.classList.add('hidden');
+        registerWrap.classList.remove('flex');
+      });
+    </script>
   </body>
 </html>
