@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEAL.TW | Upload</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container flex justify-center">
+      <!-- <div class="flex justify-center"> -->
+      <div class="w-full md:w-2/3 lg:w-1/2">
+        <h2 class="mb-4 text-center text-5xl">Share Coupon</h2>
+        <div class="grid gap-5">
+          <div class="flex flex-col">
+            <label class="text-2xl" for="form-url">URL</label>
+            <input class="form-input rounded" type="url" name="" id="form-url" placeholder="The url of coupon" />
+          </div>
+          <div class="flex flex-col">
+            <label class="text-2xl" for="form-name">Coupon Name</label>
+            <input class="form-input rounded" type="text" name="" id="form-name" placeholder="The name of coupon" />
+          </div>
+          <div class="flex flex-col">
+            <label class="text-2xl" for="form-desc">Description</label>
+            <input class="form-input rounded" type="text" name="" id="form-desc" placeholder="Descript this coupon" />
+          </div>
+          <div class="flex flex-col">
+            <label class="text-2xl" for="form-exp">Expire</label>
+            <div class="flex gap-2">
+              <input class="form-input w-1/2 rounded" type="date" name="" id="form-exp" />
+              <input class="form-input w-1/2 rounded" type="date" name="" id="form-exp" />
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <label class="text-2xl" for="form-cat">Category</label>
+            <select class="form-select rounded" name="" id="form-cat">
+              <option value="" selected disabled>Select category of coupon</option>
+              <option value="food">Food</option>
+              <option value="clothes">Clothes</option>
+              <option value="travel">Travel</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="beauty">Beauty</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
