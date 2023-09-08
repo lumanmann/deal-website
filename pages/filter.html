@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>搜索頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container mt-10 mb-16 flex gap-x-16">
+      <aside class="w-2/12 p-4">
+        <h3 class="border-b-2 border-black p-2 pt-0 text-4xl font-bold">ON SALE</h3>
+        <ul class="space-y-4 pt-4 [&>*]:border-4">
+          <li class="mx-auto">
+            <a href="#" class="block">
+              <img src="" alt="" />
+              <div class="mx-auto h-40 w-40 bg-white"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block">
+              <img src="" alt="" />
+              <div class="mx-auto h-40 w-40 bg-white"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="block">
+              <img src="" alt="" />
+              <div class="mx-auto h-40 w-40 bg-white"></div>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main class="w-10/12">
+        <header class="mb-16 shadow-lg p-4 font-bold">
+          <div class="border-b-2 border-black">
+            <h4 class="pb-1 text-4xl font-bold text-important drop-shadow-[0px_1px_1px_rgb(255,255,255)]">Stores</h4>
+          </div>
+          <ul class="flex gap-x-4 pt-4 text-white [&>*]:rounded-lg [&>*]:bg-important">
+            <li><a href="#" class="block px-6 py-2">NIKE</a></li>
+            <li><a href="#" class="block px-6 py-2">Adidas</a></li>
+            <li><a href="#" class="block px-6 py-2">ASOS</a></li>
+            <li><a href="#" class="block px-6 py-2">NIKE</a></li>
+            <li><a href="#" class="block px-6 py-2">Adidas</a></li>
+            <li><a href="#" class="block px-6 py-2">ASOS</a></li>
+          </ul>
+
+          <div class="mt-6 border-b-2 border-black">
+            <h4 class="pb-1 text-4xl font-bold text-important drop-shadow-[0px_1px_1px_rgb(255,255,255)]">Products</h4>
+          </div>
+          <ul class="flex gap-x-4 pt-4 text-white [&>*]:rounded-lg [&>*]:bg-important [&>*]:text-lg">
+            <li><a href="#" class="block px-6 py-2">Clothing</a></li>
+            <li><a href="#" class="block px-6 py-2">Sport</a></li>
+            <li><a href="#" class="block px-6 py-2">Men</a></li>
+            <li><a href="#" class="block px-6 py-2">Clothing</a></li>
+            <li><a href="#" class="block px-6 py-2">Sport</a></li>
+            <li><a href="#" class="block px-6 py-2">Men</a></li>
+          </ul>
+        </header>
+        <section >
+          <div class="flex mb-4">
+            <h4 class="text-3xl">Product</h4>
+            <select class="ms-auto">
+              <option value="4" selected disabled>請選擇</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <ul class="-mx-4 flex flex-wrap gap-y-4 [&>*]:w-1/3 [&>li]:px-4">
+            <li>
+              <div class="h-full shadow-xl p-4">
+                <img class="object-cover w-full h-[332px]" src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="">
+                <h2>Nike Men's Flex Control 4</h2>
+                <button>...more</button>
+                <p>$500 <span class="line-through">$1500</span></p>
+                <div class="flex">
+                    <p>Shop now</p>
+                    <button class="ms-auto">Like</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="h-full shadow-xl p-4">
+                <img class="object-cover w-full h-[332px]" src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="">
+                <h2>Nike Men's Flex Control 4</h2>
+                <button>...more</button>
+                <p>$500 <span class="line-through">$1500</span></p>
+                <div class="flex">
+                    <p>Shop now</p>
+                    <button class="ms-auto">Like</button>
+                </div>
+              </div>
+            </li>
+            </li>
+            <li>
+              <div class="h-full shadow-xl p-4">
+                <img class="object-cover w-full h-[332px]" src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="">
+                <h2>Nike Men's Flex Control 4</h2>
+                <button>...more</button>
+                <p>$500 <span class="line-through">$1500</span></p>
+                <div class="flex">
+                    <p>Shop now</p>
+                    <button class="ms-auto">Like</button>
+                </div>
+              </div>
+            </li>
+            </li>
+            <li>
+              <div class="h-full shadow-xl p-4">
+                <img class="object-cover w-full h-[332px]" src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="">
+                <h2>Nike Men's Flex Control 4</h2>
+                <button>...more</button>
+                <p>$500 <span class="line-through">$1500</span></p>
+                <div class="flex">
+                    <p>Shop now</p>
+                    <button class="ms-auto">Like</button>
+                </div>
+              </div>
+            </li>
+            </li>
+            <li>
+              <div class="h-full shadow-xl p-4">
+                <img class="object-cover w-full h-[332px]" src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="">
+                <h2>Nike Men's Flex Control 4</h2>
+                <button>...more</button>
+                <p>$500 <span class="line-through">$1500</span></p>
+                <div class="flex">
+                    <p>Shop now</p>
+                    <button class="ms-auto">Like</button>
+                </div>
+              </div>
+            </li>
+            </li>
+            <li>
+              <div class="h-full shadow-xl p-4">
+                <img class="object-cover w-full h-[332px]" src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="">
+                <h2>Nike Men's Flex Control 4</h2>
+                <button>...more</button>
+                <p>$500 <span class="line-through">$1500</span></p>
+                <div class="flex">
+                    <p>Shop now</p>
+                    <button class="ms-auto">Like</button>
+                </div>
+              </div>
+            </li>
+            </li>
+          </ul>
+          
+          <h4 class="text-3xl mt-16 mb-4">Stores</h4>
+          <ul class="-mx-4 flex flex-wrap gap-y-4 [&>*]:w-1/2 [&>li]:px-4">
+            <li>
+                <div class="shadow-lg pe-4 flex items-center gap-x-4">
+                    <div class="w-[100px] h-[100px] bg-black"></div>
+                    <div>
+                        <p>Up to 40% off new markdowns.</p>
+                        <p class="mt-4">like</p>
+                    </div>
+                    <div class="ms-auto">
+                        <button class="border bg-important text-white shadow-lg py-2 px-4 rounded-lg">Shop Now</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="shadow-lg pe-4 flex items-center gap-x-4">
+                    <div class="w-[100px] h-[100px] bg-black"></div>
+                    <div>
+                        <p>Up to 40% off new markdowns.</p>
+                        <p class="mt-4">like</p>
+                    </div>
+                    <div class="ms-auto">
+                        <button class="border bg-important text-white shadow-lg py-2 px-4 rounded-lg">Shop Now</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="shadow-lg pe-4 flex items-center gap-x-4">
+                    <div class="w-[100px] h-[100px] bg-black"></div>
+                    <div>
+                        <p>Up to 40% off new markdowns.</p>
+                        <p class="mt-4">like</p>
+                    </div>
+                    <div class="ms-auto">
+                        <button class="border bg-important text-white shadow-lg py-2 px-4 rounded-lg">Shop Now</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="shadow-lg pe-4 flex items-center gap-x-4">
+                    <div class="w-[100px] h-[100px] bg-black"></div>
+                    <div>
+                        <p>Up to 40% off new markdowns.</p>
+                        <p class="mt-4">like</p>
+                    </div>
+                    <div class="ms-auto">
+                        <button class="border bg-important text-white shadow-lg py-2 px-4 rounded-lg">Shop Now</button>
+                    </div>
+                </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
