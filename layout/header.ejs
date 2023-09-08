@@ -1,77 +1,55 @@
 <header class="border-b-4">
-  <div class="container flex items-center py-5 flex-wrap gap-y-4">
+  <div class="container flex flex-wrap items-center gap-y-4 py-5">
     <h1 class="me-auto text-4xl font-bold tracking-[5px] text-danger">
       <a href="../pages/index.html">DEAL.TW</a>
     </h1>
-    <div class="flex w-full md:w-3/5 lg:w-2/5 order-1 md:order-[0]">
-      <input
-        class="flex-1 py-2 ps-4 text-lg focus:ring-1 focus:ring-inset"
-        type="text"
-        placeholder="Search deal"
-      />
-      <button
-        class="flex items-center gap-2 bg-primary px-4 py-2 text-2xl font-bold text-white hover:bg-important"
-      >
+    <div class="order-1 flex w-full md:order-[0] md:w-3/5 lg:w-2/5">
+      <input class="flex-1 py-2 ps-4 text-lg focus:ring-1 focus:ring-inset" type="text" placeholder="Search deal" />
+      <button class="flex items-center gap-2 bg-primary px-4 py-2 text-2xl font-bold text-white hover:bg-important">
         <span class="material-symbols-outlined text-3xl"> search </span>
         <p class="hidden lg:block">Search</p>
       </button>
     </div>
     <button class="ms-auto lg:hidden" id="open-menu">三</button>
     <ul class="ms-auto hidden items-center gap-6 lg:flex">
-      <li
-        class="rounded-lg bg-primary text-xl text-white hover:bg-important lg:text-2xl"
-      >
+      <li class="rounded-lg bg-primary text-xl text-white hover:bg-important lg:text-2xl">
         <a href="#" class="block px-4 py-2" title="post deal">Post Deal</a>
       </li>
-      <li
-        class="rounded-lg bg-primary text-xl text-white hover:bg-important lg:text-2xl"
-      >
+      <li class="rounded-lg bg-primary text-xl text-white hover:bg-important lg:text-2xl">
         <a href="#" class="block px-4 py-2" title="sing up">Sign Up</a>
       </li>
     </ul>
   </div>
 </header>
-<nav class="hidden bg-danger bg-opacity-20 lg:block">
+<nav class="hidden bg-danger-lighter lg:block">
   <ul class="container flex pl-[4%] text-xl font-bold tracking-widest">
     <li>
-      <a class="block p-4 hover:bg-important hover:text-white" href="#"
-        >STORE</a
-      >
+      <a class="block p-4 hover:bg-important hover:text-white" href="#">STORE</a>
     </li>
     <li>
-      <a class="block p-4 hover:bg-important hover:text-white" href="#"
-        >BRAND</a
-      >
+      <a class="block p-4 hover:bg-important hover:text-white" href="#">BRAND</a>
     </li>
     <li>
-      <a class="block p-4 hover:bg-important hover:text-white" href="#"
-        >CATEGORIES</a
-      >
+      <a class="block p-4 hover:bg-important hover:text-white" href="#">CATEGORIES</a>
     </li>
     <li>
-      <a class="block p-4 hover:bg-important hover:text-white" href="#"
-        >TOP-DEALS</a
-      >
+      <a class="block p-4 hover:bg-important hover:text-white" href="#">TOP-DEALS</a>
     </li>
   </ul>
 </nav>
-<nav id="mobile-menu" class="bg-white absolute w-0 overflow-hidden z-10 h-screen lg:hidden" >
+<nav id="mobile-menu" class="absolute z-10 h-screen w-0 overflow-hidden bg-white lg:hidden">
   <button class="p-4 text-3xl" id="close-menu">X</button>
-  <ul class="text-xl font-bold tracking-widest lg:hidden pl-4" >
+  <ul class="pl-4 text-xl font-bold tracking-widest lg:hidden">
     <li><a class="block p-4 hover:underline" href="#">STORE</a></li>
     <li><a class="block p-4 hover:underline" href="#">BRAND</a></li>
     <li><a class="block p-4 hover:underline" href="#">CATEGORIES</a></li>
     <li><a class="block p-4 hover:underline" href="#">TOP-DEALS</a></li>
   </ul>
-  <ul class="flex pl-4 items-center gap-6 lg:hidden [&>li]:bg-primary">
-    <li
-      class="rounded-lg  text-xl text-white hover:bg-important lg:text-2xl"
-    >
+  <ul class="flex items-center gap-6 pl-4 lg:hidden [&>li]:bg-primary">
+    <li class="rounded-lg text-xl text-white hover:bg-important lg:text-2xl">
       <a href="#" class="block px-4 py-2" title="post deal">Post Deal</a>
     </li>
-    <li
-      class="rounded-lg  text-xl text-white hover:bg-important lg:text-2xl"
-    >
+    <li class="rounded-lg text-xl text-white hover:bg-important lg:text-2xl">
       <a href="#" class="block px-4 py-2" title="sing up">Sign Up</a>
     </li>
   </ul>

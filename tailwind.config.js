@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import("tailwindcss").Config} */
 export default {
   content: ["./pages/**/*.{html,}", "./layout/**/*.{ejs,}", "./main.js"],
   theme: {
@@ -37,6 +37,7 @@ export default {
         },
         danger: {
           DEFAULT: "#3D4033",
+          lighter: "#D1D1CF",
         },
         white: {
           DEFAULT: "#F2F2F2",
